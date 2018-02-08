@@ -11,19 +11,23 @@
   <body>
     <div class="container">
       <h1>Kcal Rechner</h1>
-      <h2>Körpergröße [cm]</h2>
-      <input id="size" type="text" name="size" value="180" placeholder="175">
-      <h2>Körpergewicht [kg]</h2>
-      <input id="weight" type="text" name="weight" value="90" placeholder="70">
-      <h2>Alter [Jahren]</h2>
-      <input id="age" type="text" name="age" value="" placeholder="28">
-      <br>
-      <br> 
-      <button onclick="calcKcal()" type="button" name="submit">Berechnen</button>
-      <br>
-      <br>
-      <p id="kcal"></p>
-      <p id="test"></p>
+      <div class="values">
+        <h2>Körpergröße [cm]</h2>
+        <input id="size" type="text" name="size" value="180" placeholder="175">
+        <br><br>
+        <h2>Körpergewicht [kg]</h2>
+        <input id="weight" type="text" name="weight" value="90" placeholder="70">
+        <br><br>
+        <h2>Alter [Jahren]</h2>
+        <input id="age" type="text" name="age" value="" placeholder="28">
+        <br><br>
+        <button class="btn" onclick="calcKcal()" type="button" name="submit">Berechnen</button>
+        <br><br>
+      </div>
+      <div class="values result">
+        <p id="kcal"></p>
+      </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
